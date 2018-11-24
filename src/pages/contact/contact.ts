@@ -11,4 +11,13 @@ export class ContactPage {
 
   }
 
+  swipe(event) {
+    if(event.direction === 2) {
+      this.navCtrl.parent.select(3);
+    }
+    if(event.direction === 4) {
+      this.navCtrl.parent.select(1);
+    }
+  }
+
 }
